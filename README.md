@@ -1,2 +1,2 @@
 # fabio_simka_portfolio
-My Portfolio
+Project 1: I used a neural net code in a predictive analysis of the probability of a local epidemic hitting a place, according to data extracted from the World Health Organization (WHO). In this predictive analysis, the goal was to identify seasonal patterns of the epidemics, and predict if and when certain locations will have an epidemic on their hands. Technologies and Knowledge: NeuralNet, Python, Machine Learning, Predictive Analysis. 
