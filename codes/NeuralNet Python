@@ -1,0 +1,26 @@
+import tensorflow as tf
+from tensorflow.keras import layers, models
+
+X = [[0, 0], [0, 1], [1, 0], [1, 1]]
+y = [[0], [1], [1], [0]]
+
+
+model = models.Sequential()
+model.add(layers.Dense(8, activation='relu', input_shape=(2,)))
+model.add(layers.Dense(16, activation='relu'))
+model.add(layers.Dense(8, activation='relu'))
+model.add(layers.Dense(1, activation='sigmoid'))
+
+
+model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
+
+
+model.fit(X, y, epochs=1500, batch_size=4)
+
+
+loss, accuracy = model.evaluate(X, y)
+print(f'Loss: {loss}, Accuracy: {accuracy}')
+
+new_data = [[0, 0], [0, 1]]
+predictions = model.predict(new_data)
+print(f'Predictions: {predictions}')
