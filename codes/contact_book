@@ -1,0 +1,92 @@
+import sqlite3
+
+class ContactBook:
+    def __init__(self, db_name):
+        self.conn = sqlite3.connect(db_name)
+        self.create_table()
+
+    def create_table(self):
+        cursor = self.conn.cursor()
+        cursor.execute('''
+            CREATE TABLE IF NOT EXISTS contacts (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                name TEXT,
+                phone TEXT,
+                email TEXT
+            )
+        ''')
+        self.conn.commit()
+
+    def add_contact(self, name, phone, email):
+        try:
+            cursor = self.conn.cursor()
+            cursor.execute('INSERT INTO contacts (name, phone, email) VALUES (?, ?, ?)', (name, phone, email))
+            self.conn.commit()
+            print("Contact added successfully!")
+        except sqlite3.Error as e:
+            print(f"Error adding contact: {e}")
+
+    def search_contact(self, name):
+        try:
+            cursor = self.conn.cursor()
+            cursor.execute('SELECT * FROM contacts WHERE name LIKE ?', (f'%{name}%',))
+            contacts = cursor.fetchall()
+            if contacts:
+                for contact in contacts:
+                    print(f"ID: {contact[0]}, Name: {contact[1]}, Phone: {contact[2]}, Email: {contact[3]}")
+            else:
+                print("No contacts found.")
+        except sqlite3.Error as e:
+            print(f"Error searching contact: {e}")
+
+    def show_all_contacts(self):
+        try:
+            cursor = self.conn.cursor()
+            cursor.execute('SELECT * FROM contacts')
+            contacts = cursor.fetchall()
+            if contacts:
+                for contact in contacts:
+                    print(f"ID: {contact[0]}, Name: {contact[1]}, Phone: {contact[2]}, Email: {contact[3]}")
+            else:
+                print("Contact book is empty.")
+        except sqlite3.Error as e:
+            print(f"Error showing all contacts: {e}")
+
+    def update_contact(self, contact_id, name, phone, email):
+        try:
+            cursor = self.conn.cursor()
+            cursor.execute('UPDATE contacts SET name=?, phone=?, email=? WHERE id=?', (name, phone, email, contact_id))
+            self.conn.commit()
+            print("Contact updated successfully!")
+        except sqlite3.Error as e:
+            print(f"Error updating contact: {e}")
+
+    def delete_contact(self, contact_id):
+        try:
+            cursor = self.conn.cursor()
+            cursor.execute('DELETE FROM contacts WHERE id=?', (contact_id,))
+            self.conn.commit()
+            print("Contact deleted successfully!")
+        except sqlite3.Error as e:
+            print(f"Error deleting contact: {e}")
+
+if __name__ == '__main__':
+    db_name = 'contacts.db'
+    contact_book = ContactBook(db_name)
+
+    contact_book.add_contact("John Doe", "1234567890", "john@example.com")
+    contact_book.add_contact("Jane Smith", "9876543210", "jane@example.com")
+
+    print("All Contacts:")
+    contact_book.show_all_contacts()
+
+    print("\nSearching for 'John':")
+    contact_book.search_contact("John")
+
+    print("\nUpdating contact with ID 1:")
+    contact_book.update_contact(1, "John Doe", "9999999999", "new_email@example.com")
+    contact_book.show_all_contacts()
+
+    print("\nDeleting contact with ID 2:")
+    contact_book.delete_contact(2)
+    contact_book.show_all_contacts()
