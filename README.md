@@ -6,7 +6,7 @@ I have a keen commitment to continuous learning and thrive within dynamic, colla
 
 I'm thrilled at the opportunity to contribute my expertise to a forward-thinking organization that values innovation and embraces a data-centric approach to decision-making. Please explore my comprehensive portfolio below, highlighting my projects, technical proficiencies, and a detailed overview of my professional journey.
 
-#TL;DR
+# TL;DR
 Who I Am: Passionate and results-driven professional with expertise in data science, analytics, and cloud solutions.
 
 Skills & Expertise: Proficient in Python, R, AWS Cloud Solutions Architecture, and Machine Learning. Strong critical thinking and communication skills.
