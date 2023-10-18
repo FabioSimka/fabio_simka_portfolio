@@ -5,6 +5,16 @@ Greetings! I'm Fabio Simka, an enthusiastic and outcome-driven professional with
 I have a keen commitment to continuous learning and thrive within dynamic, collaborative environments that encourage innovation and growth. My adaptability, critical thinking prowess, and strong communication abilities equip me to effectively collaborate with cross-functional teams, driving impactful results in challenging, fast-paced settings.
 
 I'm thrilled at the opportunity to contribute my expertise to a forward-thinking organization that values innovation and embraces a data-centric approach to decision-making. Please explore my comprehensive portfolio below, highlighting my projects, technical proficiencies, and a detailed overview of my professional journey.
+
+#TL;DR
+Who I Am: Passionate and results-driven professional with expertise in data science, analytics, and cloud solutions.
+
+Skills & Expertise: Proficient in Python, R, AWS Cloud Solutions Architecture, and Machine Learning. Strong critical thinking and communication skills.
+
+Key Projects: Utilized neural nets for predictive analysis, implemented AWS Cloud Solutions for data lake management, and facilitated seamless cloud-native transitions. Developed contact book tools and optimized server workloads for high resilience.
+
+Approach: Committed to continuous learning, thrive in collaborative environments, and skilled at translating complex technical concepts to drive tangible business outcomes.
+
 # Projects
 To give a comprehensive view of my projects portfolio, I separated the images from the cloud solutions and the codes into pastes. Below you can read a resumed version of the project and use the link to access the image/code for that particular project. 
 
