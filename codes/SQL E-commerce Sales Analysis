@@ -1,0 +1,40 @@
+WITH monthly_sales AS (
+  SELECT 
+    EXTRACT(YEAR FROM order_date) AS order_year,
+    EXTRACT(MONTH FROM order_date) AS order_month,
+    SUM(total_price) AS monthly_revenue
+  FROM 
+    sales
+  GROUP BY 
+    order_year, order_month
+  ORDER BY 
+    order_year, order_month
+),
+
+top_customers AS (
+  SELECT 
+    customer_id,
+    COUNT(DISTINCT order_id) AS total_orders,
+    SUM(total_price) AS total_spent
+  FROM 
+    sales
+  GROUP BY 
+    customer_id
+  ORDER BY 
+    total_spent DESC
+  LIMIT 10
+)
+
+SELECT 
+  order_year, 
+  order_month, 
+  monthly_revenue, 
+  total_orders, 
+  total_spent 
+FROM 
+  monthly_sales 
+JOIN 
+  top_customers 
+ON 
+  monthly_sales.order_year = top_customers.order_year 
+  AND monthly_sales.order_month = top_customers.order_month;
