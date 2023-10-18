@@ -9,7 +9,7 @@ I'm thrilled at the opportunity to contribute my expertise to a forward-thinking
 # TL;DR
 Who I Am: Passionate and results-driven professional with expertise in data science, analytics, and cloud solutions.
 
-Skills & Expertise: Proficient in Python, R, AWS Cloud Solutions Architecture, and Machine Learning. Strong critical thinking and communication skills.
+Skills & Expertise: Proficient in Python, R, SQL AWS Cloud Solutions Architecture, and Machine Learning. Strong critical thinking and communication skills.
 
 Key Projects: Utilized neural nets for predictive analysis, implemented AWS Cloud Solutions for data lake management, and facilitated seamless cloud-native transitions. Developed contact book tools and optimized server workloads for high resilience.
 
