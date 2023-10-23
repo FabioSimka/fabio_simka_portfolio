@@ -43,4 +43,4 @@ Project 8: Used a SQL query to calculate the total monthly revenue from sales an
 >Link to code of project 8: codes/SQL E-commerce Sales Analysis
 
 Project 9: Used a excel database for a consulting company looking to better track their upgrading jobs with an interactive dashboard on Microsoft Power BI. Applying filters so it better translates with the need to see things in a quick and clear overview of its daily demands.
-> Link for project 9
+> Link for project 9: To open on BI (pbix file) - Power BI/power_BI_dashboard.pbix  /   PNG preview: Power BI/power_BI_static_image.png
