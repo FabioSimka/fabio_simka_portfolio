@@ -9,7 +9,7 @@ I'm thrilled at the opportunity to contribute my expertise to a forward-thinking
 # TL;DR
 Who I Am: Passionate and results-driven professional with expertise in data science, analytics, and cloud solutions.
 
-Skills & Expertise: Proficient in Python, R, SQL, AWS Cloud Solutions Architecture and Machine Learning. Strong critical thinking and communication skills.
+Skills & Expertise: Proficient in Python, R, SQL, AWS Cloud Solutions Architecture and Machine Learning, Power BI dashboards. Strong critical thinking and communication skills.
 
 Key Projects: Utilized neural nets for predictive analysis, implemented AWS Cloud Solutions for data lake management, and facilitated seamless cloud-native transitions. Developed contact book tools and optimized server workloads for high resilience, used SQL analysis to create valuable insights and identify top customers for an e-commerce platform.
 
@@ -40,4 +40,7 @@ Project 7: The cliente needed a e-commerce setting with cloud applications maxim
 >Link for project 7:cloud_solutions/E-commerce architecture.jpg
 
 Project 8: Used a SQL query to calculate the total monthly revenue from sales and identified the top 10 customers based on the number of orders and total amount spent, that data gave grounds for the insights of sales trends over time, understanding customer behavior and adjust marketing strategies accordingly, as well as develop loyalty programs for the top buyers and retaining high-value customers.  
->Link to code: codes/SQL E-commerce Sales Analysis
+>Link to code of project 8: codes/SQL E-commerce Sales Analysis
+
+Project 9: Used a excel database for a consulting company looking to better track their upgrading jobs with an interactive dashboard on Microsoft Power BI. Applying filters so it better translates with the need to see things in a quick and clear overview of its daily demands.
+> Link for project 9
